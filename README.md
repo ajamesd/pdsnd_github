@@ -4,6 +4,7 @@
 The Bikeshare program was created on the 2/01/2023 and the github repo was created on the 06/01/2023
 
 ### US bikeshare project
+The final project for Introduction to Python
 
 ### Description
 This program allows users to explore bikeshare data from three US cities (New York, Chiago, Washington).
@@ -16,6 +17,11 @@ washington.csv
 new_york_city.csv
 chicago.csv
 The filepaths for this data must be specificed 
+
+### Latest updates
+
+I am continiously updating both this README.md file and the source code
+
 
 ### Credits
 Udacity course material, data and information
