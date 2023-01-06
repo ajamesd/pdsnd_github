@@ -2,11 +2,11 @@ import datetime as dt
 import pandas as pd
 import time
 
-#             LOCATING THE DATA
+#             LOCATING THE DATA [ Please make sure all data has been downloaded from github source]
 
-CITY_DATA = { 'chicago': r'C:\Users\adobr\chicago.csv',
-              'new york': r'C:\Users\adobr\new_york_city.csv',
-              'washington': r'C:\Users\adobr\washington.csv' }
+CITY_DATA = { 'chicago': 'chicago.csv',
+              'new york city': 'new_york_city.csv',
+              'washington': 'washington.csv' }
 
 # SELECTING WHAT DATA SET TO LOAD AND WHICH FILTERS TO APPLY
 
@@ -223,7 +223,7 @@ def user_stats(df):
             "The ago profile of these riders is as follows:\n The oldest rider was born on {}, the youngest rider was born on {}\n and the most common year of birth for our riders was {}".format(
                 earlist_by, recent_by, common_by))
     else:
-        print("No Birth Year data available for this dataset")
+        print("No Brith Year data available for this dataset")
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -232,7 +232,7 @@ def user_stats(df):
 #PROVIDING OPTION TO SEE RAW DATA
 
 def raw_data(df):
-    get_raw_data = input('\nWould you like to see the raw data? Enter yes or no.\n').lower()
+    get_raw_data = input('\nWould you like to see the raw data? Enter yes or no.\n')
     while get_raw_data.lower() not in ['yes', 'no']:
         print("You've entered an invalid response. Please correct your input")
     if get_raw_data.lower() == 'yes':
@@ -242,7 +242,7 @@ def raw_data(df):
         print(df.iloc[count_lower:count_upper])
         count_upper += 5
         count_lower += 5
-        get_raw_data = input('\nWould you like to see more raw data? Enter yes or no.\n').lower()
+        get_raw_data = input('\nWould you like to see more raw data? Enter yes or no.\n')
         while get_raw_data.lower() not in ['yes', 'no']:
             print("You've entered an invalid response. Please correct your input")
 
@@ -261,8 +261,8 @@ def main():
         user_stats(df)
         raw_data(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n').lower()
-        if restart != 'yes':
+        restart = input('\nWould you like to restart? Enter yes or no.\n')
+        if restart.lower() != 'yes':
             break
 
 
