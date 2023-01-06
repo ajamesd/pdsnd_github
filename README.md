@@ -21,6 +21,7 @@ The filepaths for this data must be specificed
 ### Latest updates
 
 I am continiously updating both this README.md file and the source code
+It has been renamed from Alexander_Dobres_bikeshare_projectv2.py to ADobres_Bikesare_git.py
 
 
 ### Credits
