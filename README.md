@@ -17,6 +17,7 @@ washington.csv
 new_york_city.csv
 chicago.csv
 The filepaths for this data must be specificed 
+[NB for the Github repo only samples of the data have been uploaded due to the large size of the full files]
 
 ### Latest updates
 
