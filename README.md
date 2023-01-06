@@ -13,10 +13,11 @@ It is an interactive program that allows users to view data from the cites with 
 ### Files used
 ADobres_bikeshare.py (main program file)
 Users will also need the following data files located in the data folder:
-washington.csv
-new_york_city.csv
-chicago.csv
-The filepaths for this data must be specificed 
+* washington.csv
+* new_york_city.csv
+* chicago.csv
+The filepaths for this data must be specificed in the inital lines of the ADobres_bikeshare.py code
+
 [NB for the Github repo only samples of the data have been uploaded due to the large size of the full files]
 
 ### Latest updates
